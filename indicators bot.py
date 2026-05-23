@@ -4,7 +4,6 @@ data/indicators.py — Technical indicators for strategy use.
 All functions take a DataFrame (from DataFeed) and return a Series
 or DataFrame. No external TA library required — pure pandas/numpy.
 
-Add custom indicators here as you build out your strategy.
 """
 
 import numpy as np
