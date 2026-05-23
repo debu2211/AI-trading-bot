@@ -1,23 +1,3 @@
-"""
-data/feed.py — Market data pipeline.
-
-Two modes:
-  1. Historical  — fetch OHLCV bars for backtesting / strategy warm-up
-  2. Real-time   — WebSocket stream of live bars as they close
-
-Both return clean pandas DataFrames with consistent column names so
-the strategy layer never needs to know which source it's reading from.
-
-Usage:
-    feed = DataFeed(client)
-
-    # Historical (blocking)
-    df = feed.get_history("AAPL", days=30)
-
-    # Real-time (async, runs forever)
-    await feed.stream(["AAPL", "TSLA"], on_bar=my_callback)
-"""
-
 import asyncio
 import logging
 from datetime import datetime, timedelta, timezone
