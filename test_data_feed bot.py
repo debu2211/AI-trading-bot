@@ -1,17 +1,3 @@
-"""
-test_data_feed.py — Test and demo for the data pipeline.
-
-Run this after test_connection.py passes to verify:
-  1. Historical bar fetching works
-  2. DataFeed cache and summary work
-  3. All indicators compute correctly on real data
-  4. Real-time streaming connects (press Ctrl+C to stop)
-
-Usage:
-    python test_data_feed.py
-    python test_data_feed.py --stream    # also test live stream
-"""
-
 import sys
 import asyncio
 import argparse
