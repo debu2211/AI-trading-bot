@@ -1,9 +1,3 @@
-"""
-config.py — Central configuration for the trading bot.
-All strategy parameters and constants live here. Never hardcode
-these values in strategy or execution files.
-"""
-
 import os
 from dotenv import load_dotenv
 
