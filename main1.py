@@ -1,18 +1,3 @@
-"""
-main.py — Bot entry point.
-
-Runs the trading loop:
-  1. Check market is open
-  2. Load latest bars
-  3. Run strategy → get signals
-  4. Apply risk checks
-  5. Execute orders
-  6. Sleep until next bar
-
-Usage:
-    python main.py
-"""
-
 import logging
 import time
 import os
